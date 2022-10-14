@@ -22,3 +22,6 @@ https://www.facebook.com/codingcompetitions/hacker-cup/2022
 
 ## Note
 - to run the program for each problem, add the input.txt and update the path in the code accordingly
+
+## Result
+Round 2 -> 2,993rd out of 5,047
