@@ -32,7 +32,23 @@ func ReadKeyboardInput() rune {
 	return char
 }
 
-func Modulo(a, b, m int) int {
+func PowerMod(base, exponent, modulus int) int {
+	if base < 1 || exponent < 0 || modulus < 1 {
+		return -1
+	}
+
+	result := 1
+	for exponent > 0 {
+		if (exponent % 2) == 1 {
+			result = (result * base) % modulus
+		}
+		base = (base * base) % modulus
+		exponent = exponent / 2
+	}
+	return result
+}
+
+func MinMod(a, b, m int) int {
 	return ((a % m) - (b % m) + m) % m
 }
 
